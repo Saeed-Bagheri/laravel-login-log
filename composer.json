@@ -1,0 +1,38 @@
+{
+  "name": "saeed/laravel-login-log",
+  "description": "Save user login date and ip",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "keywords": [
+    "laravel",
+    "authentication",
+    "login",
+    "log",
+    "login history",
+    "login log"
+  ],
+  "authors": [
+    {
+      "name": "Saeed B.Darestany",
+      "email": "saeed.darestany@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "laravel/laravel": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Saeed\\LoginLog\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Saeed\\LoginLog\\LoginLogServiceProvider"
+      ]
+    }
+  }
+}
